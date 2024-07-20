@@ -1,29 +1,31 @@
 ﻿#region Thread Sınıfı
-class Program
-{
-    private static void Main(string[] args)
-    {
-        //Thread thread = new(ThreadMethod);
-        Thread thread = new((o) =>
-        {
-            for (int i = 0; i < 999; i++)
-            {
-                Console.WriteLine($"Worker Thread {i}");
-            }
-        });
+//class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        //Thread thread = new(ThreadMethod);
+//        Thread thread = new((o) =>
+//        {
+//            for (int i = 0; i < 999; i++)
+//            {
+//                Console.WriteLine($"Worker Thread {i}");
+//            }
+//        });
 
-        thread.Start();
-        for (int i = 0; i < 999; i++)
-        {
-            Console.WriteLine($"Main Thread {i}");
-        }
-    }
+//        thread.Start();
+//        for (int i = 0; i < 999; i++)
+//        {
+//            Console.WriteLine($"Main Thread {i}");
+//        }
+//    }
 
-    static void ThreadMethod()
-    {
+//    }
 
-    }
-}
+//    static void ThreadMethod()
+//    {
+
+//    }
+//}
 #endregion
 //#region Thread Id
 //class Program
